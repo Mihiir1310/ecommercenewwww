@@ -114,7 +114,9 @@ export default async function ProductDetailPage({ params }: ProductDetailProps) 
       <div className="max-w-3xl w-full bg-white rounded-xl shadow-lg p-6">
         <Image
           src={product.imageUrl}
-          alt={product.name}
+                 alt={product.name}
+                 width={300}
+                 height={100}
           className="w-full h-72 object-contain rounded-lg mb-6"
         />
         <h1 className="text-3xl font-bold mb-2">{product.name}</h1>
